@@ -1,9 +1,515 @@
-@charset "utf-8";
+@charset "UTF-8";
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+@@import "/base/reset"
 
-@import "base/sanitize";
+pre,
+textarea {
+    overflow: auto;
+}
 
-@import "object/utility";
+button,
+img {
+    border: none
+}
+
+[hidden],
+audio:not([controls]),
+template {
+    display: none
+}
+
+details,
+main,
+summary {
+    display: block
+}
+
+input[type=number] {
+    width: auto
+}
+
+input[type=search] {
+    -webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+progress {
+    display: inline-block
+}
+
+small {
+    font-size: 75%
+}
+
+textarea {
+    resize: vertical
+}
+
+[unselectable] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    border-style: solid;
+    border-width: 0
+}
+
+* {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0
+}
+
+#saishi #overLayer,
+#top #overLayer,
+#torii #overLayer {
+    margin-top: -244px;
+    margin-left: -325px
+}
+
+::after,
+::before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+
+:root {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    cursor: default;
+    font: 16px/1.5 sans-serif;
+    text-rendering: optimizeLegibility
+}
+
+html {
+    background-color: #FFF
+}
+
+a {
+    text-decoration: none
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle
+}
+
+button,
+input,
+select,
+textarea {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    min-height: 1.5em
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace
+}
+
+nav ol,
+nav ul {
+    list-style: none
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+
+select::-ms-expand {
+    display: none
+}
+
+select::-ms-value {
+    color: currentColor
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+::-moz-selection {
+    background-color: #B3D4FC;
+    text-shadow: none
+}
+
+::selection {
+    background-color: #B3D4FC;
+    text-shadow: none
+}
+
+@media screen {
+    [hidden~=screen] {
+        display: inherit
+    }
+    [hidden~=screen]:not(:active):not(:focus):not(:target) {
+        clip: rect(0 0 0 0)!important;
+        position: absolute!important
+    }
+}
+
+.u-clearfix:after,
+.u-column3:after {
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both
+}
+
+.u-column3__item {
+    display: block;
+    float: left;
+    width: 290px;
+    margin-right: 15px
+}
+
+.u-column3__item:last-of-type {
+    margin-right: 0
+}
+
+.u-font-family__gothic {
+    font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
+}
+
+.u-font-family__gothic--full {
+    font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif
+}
+
+.u-font-family__serif {
+    font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif
+}
+
+.u-font-family__serif--full {
+    font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif
+}
+
+.u-font-family__tohaba {
+    font-family: Osaka-mono, "MS Gothic", monospace
+}
+
+.u-font-family__tohaba--full {
+    font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace
+}
+
+.u-font-family__maru {
+    font-family: "Hiragino Maru Gothic ProN", Meiryo, fantasy
+}
+
+.u-font-family__maru--full {
+    font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", Meiryo, fantasy
+}
+
+.u-font-family__android-full-set {
+    font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif
+}
+
+.u-filter__hover:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+    -moz-opacity: .8;
+    -khtml-opacity: .8;
+    zoom: 1
+}
+
+#saishi div#glayLayer,
+#top div#glayLayer,
+#torii div#glayLayer {
+    display: none;
+    width: 100%;
+    filter: alpha(opacity=60);
+    opacity: .6
+}
+
+body,
+html {
+    font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
+}
+
+li,
+ol,
+ul {
+    list-style-type: none
+}
+
+img {
+    max-width: 100%
+}
+
+body#top {
+    background-image: url(../images/TOP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    position: relative
+}
+
+#top .hune,
+#top .icon1,
+#top .icon2,
+#top .you {
+    position: absolute
+}
+
+#top .title {
+    text-align: center;
+    padding: 46px 10px 0
+}
+
+#top .icon1 {
+    top: 27.6%;
+    left: 10.32%
+}
+
+#top .you {
+    top: 5%;
+    left: 6.3%
+}
+
+#top .icon2 {
+    top: 41.875%;
+    left: 52.72%
+}
+
+#top .hune {
+    top: 72.375%;
+    left: 43.68%
+}
+
+#top div#glayLayer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #000
+}
+
+#top #overLayer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%
+}
+
+body#saishi {
+    background-image: url(../images/saishi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    position: relative
+}
+
+#saishi .you {
+    position: absolute;
+    top: 5%;
+    left: 7.4%
+}
+
+#saishi .tope,
+#saishi .toriie{
+    position: absolute;
+    left: 89.44%
+}
+
+#saishi .tope {
+    top: 2.75%
+}
+
+#saishi .toriie {
+    top: 8.25%
+}
+
+#saishi .henkan {
+    position: absolute;
+    top: 52.875%;
+    left: 39.52%
+}
+
+#saishi .oomizu {
+    position: absolute;
+    top: 65.75%;
+    left: 8.48%
+}
+
+#saishi .hangan {
+    position: absolute;
+    top: 11.625%;
+    left: 16.16%
+}
+
+#saishi .okitsu {
+    position: absolute;
+    top: 60.75%;
+    left: 31.6%
+}
+
+#saishi .iwakami {
+    position: absolute;
+    top: 1.5%;
+    left: 70.32%
+}
+
+#saishi .iwakage {
+    position: absolute;
+    top: 30.125%;
+    left: 84.64%
+}
+
+#saishi .roten {
+    position: absolute;
+    top: 69.1%;
+    left: 70.32%
+}
+
+#saishi div#glayLayer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #000
+}
+
+#saishi #overLayer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%
+}
+
+body#torii {
+    background-image: url(../images/torii.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    position: relative
+}
+
+#torii .misogi,
+#torii .saishi,
+#torii .sandou,
+#torii .shokubutu,
+#torii .tope,
+#torii .saishie,
+#torii .you {
+    position: absolute
+}
+
+#torii .you {
+    top: 4.7%;
+    left: 3.4%
+}
+
+#torii .misogi {
+    top: 64.125%;
+    left: 13.8%
+}
+
+#torii .shokubutu {
+    top: 20.125%;
+    left: 32.117%
+}
+
+#torii .sandou {
+    top: 39.25%;
+    left: 82.6%
+}
+
+#torii .tope {
+    top: 2.75%;
+    left: 89.29%
+}
+
+#torii .saishie{
+    top: 8.25%;
+    left: 89.29%;
+}
+
+#torii .saishi {
+    top: 4.6%;
+    left: 53.06%
+}
+
+#torii div#glayLayer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #000
+}
+
+#torii #overLayer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%
+}
 
 
+/*
+    modal window
+*/
+.modalContent {}
+.modal_overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.modal_wrap {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    max-width: 600px;
+    min-width: 240px;
+    min-height: 300px;
+    background-color: #fff;
+    z-index: 9;
+}
 
-
+.modal_btn {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    z-index: 9;
+}
+.modal_btn-prev {
+    left: 0;
+    background-color: red;
+}
+.modal_btn-next {
+    right: 0;
+    background-color: blue;
+}

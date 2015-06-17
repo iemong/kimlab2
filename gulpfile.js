@@ -5,9 +5,9 @@ var gulp = require('gulp'),
 			プラグイン(gulp-load-pluginsでgulp関連のものは一括導入)
 			キャメルケースで各プラグインを実行できるようになる
 		*/
-        plugins = require('gulp-load-plugins')({ 
+        plugins = require('gulp-load-plugins')({
             camelize: true,
-            rename:{'gulp-ruby-sass': 'rubySass'} 
+            rename:{'gulp-ruby-sass': 'rubySass'}
         }),
         browserSync = require('browser-sync'),
 
@@ -43,7 +43,7 @@ var gulp = require('gulp'),
 			scssDest   : 'build/css',
 			scssTarget : 'assets/scss/**/*.scss',
 			// javascript
-			jsSrc      : 'assets/js/script.js',
+			jsSrc      : 'assets/js/top.js',
 			jsDest     : 'build/js',
 			jsTarget   : 'assets/js/**/*.js',
 			// images
@@ -90,7 +90,7 @@ gulp.task('php',function(){
 /* Sass(SCSS)ビルド、css minify */
 gulp.task('sassmin', function () {
     //SASSコンパイル
-    return plugins.rubySass(path.scssMain) 
+    return plugins.rubySass(path.scssMain)
         .on('error', function (err) {
         console.error('Error!', err.message);
     })
