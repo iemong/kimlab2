@@ -42,4 +42,8 @@ $(function(){
 		else {
 		}
 	}
+
+	$('#wrapper').tubular({
+		videoId: '8wMoClW0KXY',
+		});
 });

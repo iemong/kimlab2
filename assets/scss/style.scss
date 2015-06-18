@@ -1,9 +1,8 @@
 @charset "UTF-8";
 /*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
-@@import "/base/reset"
+@import "base/reset";
 
-pre,
-textarea {
+pre,textarea {
     overflow: auto;
 }
 
@@ -251,7 +250,8 @@ table {
 
 body,
 html {
-    font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
+    font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    background-color: #000000;
 }
 
 li,
@@ -269,10 +269,13 @@ body#top {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 800px;
     position: relative
 }
-
+#top #wrapper {
+    position: relative;
+    height: 800px;
+    z-index: 100;
+}
 #top .hune,
 #top .icon1,
 #top .icon2,
