@@ -248,11 +248,6 @@ table {
     opacity: .6
 }
 
-body,
-html {
-    font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    background-color: #000000;
-}
 
 li,
 ol,
@@ -263,20 +258,28 @@ ul {
 img {
     max-width: 100%
 }
+body {
+    position: relative;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    background-color: #000000;
+}
 
 body#top {
-    background-image: url(../images/TOP.jpg);
+    background-image: url(../images/top_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative;
-    letter-spacing: 2px;
+
+
 }
 #top #wrapper {
     position: relative;
     height: 100%;
     min-height: 750px;
-    background-image: url("../images/movie_dot.png");
+    background-image: url("../images/movie_bg.png");
 }
 #top .hune,
 #top .icon1,
@@ -293,7 +296,7 @@ body#top {
 }
 
 .title h1 {
-    margin-top: 300px;
+    margin-top: 280px;
 }
 
 #top .icon1 {
@@ -306,32 +309,44 @@ body#top {
     left: 6.3%
 }
 
-#top .icon2 {
+#top .icon2  {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+}
+#top .icon2 p {
+    box-sizing: padding-box;
+    line-height: 50px;
     width: 150px;
     height: 50px;
-    line-height: 50px;
-    top: 460px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
-    text-align: center;
     border: 2px solid #ffffff;
-    box-sizing: padding-box;
+    z-index: 2;
 }
-
 #top .icon2 a {
     width: 150px;
     height: 50px;
     display: block;
     color: #ffffff;
     letter-spacing: 2px;
-
+    background-color: rgba(250, 250, 250, 0.0);
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+    font-weight: bold;
 }
 
 #top .icon2 a:hover {
-    background-color: rgba(250, 250, 250, 0.2);;
+    background-color: rgba(250, 250, 250, 0.2);
 }
 
+.fadeInImage {
+    margin: 0 auto 0;
+    padding-top: 20px;
+    display: block;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
 #top .hune {
     top: 72.375%;
     left: 43.68%
@@ -353,16 +368,17 @@ body#top {
 }
 
 
-#top footer {
+footer {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 35px;
     position: absolute;
     bottom: 0;
     text-align: center;
     background-color: #000000;
     color: #ffffff;
     font-weight: 100;
+    font-size: 11px;
 
 }
 body#saishi {
@@ -452,7 +468,7 @@ body#saishi {
 }
 
 body#torii {
-    background-image: url(../images/torii.jpg);
+    background-image: url(../images/torii/torii_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
