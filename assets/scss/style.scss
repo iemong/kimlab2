@@ -258,6 +258,9 @@ ul {
 img {
     max-width: 100%
 }
+html {
+    background-color: #222222;
+}
 body {
     position: relative;
     letter-spacing: 2px;
@@ -472,53 +475,12 @@ body#torii {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 800px;
     position: relative
 }
 
-#torii .misogi,
-#torii .saishi,
-#torii .sandou,
-#torii .shokubutu,
-#torii .tope,
-#torii .saishie,
-#torii .you {
-    position: absolute
-}
-
-#torii .you {
-    top: 4.7%;
-    left: 3.4%
-}
-
-#torii .misogi {
-    top: 64.125%;
-    left: 13.8%
-}
-
-#torii .shokubutu {
-    top: 20.125%;
-    left: 32.117%
-}
-
-#torii .sandou {
-    top: 39.25%;
-    left: 82.6%
-}
-
-#torii .tope {
-    top: 2.75%;
-    left: 89.29%
-}
-
-#torii .saishie{
-    top: 8.25%;
-    left: 89.29%;
-}
-
-#torii .saishi {
-    top: 4.6%;
-    left: 53.06%
+#torii #wrapper {
+    height: 100%;
+    min-height: 750px;
 }
 
 #torii div#glayLayer {
