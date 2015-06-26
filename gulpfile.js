@@ -107,7 +107,7 @@ gulp.task('sassmin', function () {
 
 /* .jsファイルの圧縮 */
 gulp.task('jsmin', function(){
-	gulp.src(path.jsSrc)
+	gulp.src(path.jsTarget)
 		.pipe(plugins.plumber())
 		//minify
 		.pipe(plugins.jsmin())

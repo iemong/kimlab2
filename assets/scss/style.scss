@@ -505,6 +505,8 @@ body#torii {
 .modalContent {}
 .modal_overlay {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.8);
@@ -514,13 +516,40 @@ body#torii {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     min-width: 240px;
     min-height: 300px;
-    background-color: #fff;
+    padding: 0 60px;
+    background-color: #000000;
     z-index: 9;
 }
-
+.modal_movie {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-top: 10px;
+}
+.modal_movie　iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+.modal_tit {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0 5px;
+}
+.modal_text {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 15px 40px;
+}
 .modal_btn {
     display: block;
     position: absolute;
@@ -530,9 +559,17 @@ body#torii {
 }
 .modal_btn-prev {
     left: 0;
-    background-color: red;
+    background-image: url(../images/icn_arrow_left.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
 }
 .modal_btn-next {
     right: 0;
-    background-color: blue;
+    background-image: url(../images/icn_arrow_right.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
 }
