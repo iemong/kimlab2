@@ -1,5 +1,5 @@
 $(function(){
-	$('#wrapper').tubular({
+	$('#top .wrapper').tubular({
 		videoId: 'jBfzUanJCd4'
 	});
 
