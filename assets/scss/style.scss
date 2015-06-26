@@ -269,7 +269,9 @@ body {
     font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     background-color: #000000;
 }
-
+section {
+    min-height: 800px;
+}
 #top {
     background-image: url(../images/top_bg.jpg);
     background-repeat: no-repeat;
