@@ -1,4 +1,6 @@
 $(function(){
+    $('.modal_overlay1').hide();
+    $('.modal_overlay2').hide();
     $('.bxslider1').bxSlider({
         mode: 'horizontal',
         infiniteLoop: true,

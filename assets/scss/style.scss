@@ -386,7 +386,8 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative
+    position: relative;
+    z-index: 2;
 }
 #saishi .wrapper {
     height: 100%;
@@ -401,7 +402,8 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative
+    position: relative;
+    z-index: 2;
 }
 
 #torii .wrapper {
@@ -528,4 +530,25 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.8;
+}
+
+/*-----------------
+    pagetop
+------------------*/
+#page-top {
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    font-size: 77%;
+    z-index: 2
+}
+#page-top a {
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#page-top a:hover {
+    text-decoration: none;
 }
