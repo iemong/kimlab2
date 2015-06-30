@@ -5,7 +5,7 @@ $(function(){
         mode: 'horizontal',
         infiniteLoop: true,
         auto: true,
-        controls: true,
+        controls: false,
         pager: false,
         speed:1500,
         pause:4000,
@@ -13,11 +13,10 @@ $(function(){
         maxSlides: 3,
         moveSlides:1,
         slideWidth:200,
-        onSlideBefore: function($slideElement, oldIndex, newIndex){
-        }
+        autoHover:true
     });
 });
-//
+
 $(window).load(function(){
     var t = $('.modalContent1'),
 			overlay = $('.modal_overlay1'),
@@ -60,10 +59,27 @@ $(window).load(function(){
 		overlay.hide();
 		overlay.removeClass('is-active');
 	});
+    $(".modal_close").on('click', function(){
+        overlay.hide();
+		overlay.removeClass('is-active');
+    });
+    $(".modalContent").hover(
+        function(){
+            modalTit = $(this).find('img').attr('title');
+            sethover = setTimeout(function(){
+                var addTit = $(".js-modalContent__tit").text(modalTit);
+                $(".js-modalContent__tit").fadeIn(500);
+            }, 500);
 
+        },
+        function(){
+            $(".js-modalContent__tit").fadeOut(500);
+            clearTimeout(sethover);
+        }
+    );
 	function showSlide(i) {
 		var href = t.eq(i).find('a').attr('href');
-		var title = t.eq(i).find('img').attr('title')
+		var title = t.eq(i).find('img').attr('title');
 		var text = t.eq(i).find('img').attr('alt');
 		modalWrap.find(".modal_movie1").html("<iframe src='"+ href +"'>");
 		modalWrap.find(".modal_tit1").text(title);

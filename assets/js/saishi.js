@@ -3,7 +3,7 @@ $(function(){
         mode: 'horizontal',
         infiniteLoop: true,
         auto: true,
-        controls: true,
+        controls: false,
         pager: false,
         speed:1500,
         pause:4000,
@@ -11,11 +11,10 @@ $(function(){
         maxSlides: 3,
         moveSlides:1,
         slideWidth:200,
-        onSlideBefore: function($slideElement, oldIndex, newIndex){
-        }
+        autoHover:true
     });
 });
-//
+
 $(window).load(function(){
     var t = $('.modalContent2'),
 			overlay = $('.modal_overlay2'),
@@ -58,7 +57,10 @@ $(window).load(function(){
 		overlay.hide();
 		overlay.removeClass('is-active');
 	});
-
+    $(".modal_close").on('click', function(){
+        overlay.hide();
+		overlay.removeClass('is-active');
+    });
 	function showSlide(i) {
 		var href = t.eq(i).find('a').attr('href');
 		var title = t.eq(i).find('img').attr('title')

@@ -1,6 +1,7 @@
 $(function(){
 	$('#top .wrapper').tubular({
-		videoId: 'jBfzUanJCd4'
+		videoId: 'jBfzUanJCd4',
+		repeat: true
 	});
 
 	$('#js-top__next').hover(

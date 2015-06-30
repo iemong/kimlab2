@@ -58,9 +58,10 @@ gulp.task('server', function() {
 		server: {
 			baseDir: path.docDir
 			// proxy  : path.proxy,
-			// port   : path.port
+			// port   : path.port,
 		},
-        browser: "google chrome"
+        browser: "google chrome",
+        https: false
 	});
 });
 
