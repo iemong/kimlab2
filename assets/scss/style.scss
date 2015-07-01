@@ -438,10 +438,10 @@ footer {
     background-color:#000000;
 }
 .bxslider1 li {
-    width: 180px !important;
+    width: 150px !important;
 }
 .bxslider2 li {
-    width: 180px !important;
+    width: 150px !important;
 }
 
 .js-slider {
@@ -450,12 +450,16 @@ footer {
     margin: auto;
     left: 0;
     right: 0;
-    width: 540px;
-    height: 129px;
+    width: 450px;
+    height: 96px;
+    border: 4px solid #000000;
+}
+#saishi .js-slider{
+    width: 1050px;
 }
 .slide_bg {
-    width: 180px;
-    height: 129px;
+    width: 151px;
+    height: 87px;
     position: absolute;
     top: 0;
     z-index: 2;
@@ -463,11 +467,17 @@ footer {
     background-repeat: repeat-x;
 }
 .slide_bg.left {
-    left: 2px;
+    left: 1px;
 }
 .slide_bg.right {
     right: 0px;
-    width: 178px;
+    width: 141px;
+}
+#saishi .slide_bg.left {
+    width: 451px;
+}
+#saishi .slide_bg.right {
+    width: 441px;
 }
 .js-modalContent__tit {
     display: none;

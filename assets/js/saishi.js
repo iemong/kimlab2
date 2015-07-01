@@ -8,9 +8,9 @@ $(function(){
         speed:1500,
         pause:4000,
         minSlides: 3,
-        maxSlides: 3,
+        maxSlides: 7,
         moveSlides:1,
-        slideWidth:200,
+        slideWidth:1050,
         autoHover:true
     });
 });
