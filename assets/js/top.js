@@ -12,7 +12,7 @@ $(function(){
 			$(".fadeInImage").animate({opacity:0.0},500);
 		}
 	);
-	$('a[href^=#]').click(function(){
+	$('a[href^=#], area').click(function(){
 		var speed = 500;
 		var href= $(this).attr("href");
 		var target = $(href == "#" || href == "" ? 'html' : href);
