@@ -268,6 +268,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     background-color: #000000;
+    min-width: 1350px;
 }
 section {
     min-height: 800px;
@@ -298,20 +299,22 @@ section {
     margin-top: 280px;
 }
 
-#top .icon1 {
-    top: 27.6%;
-    left: 10.32%
-}
-
 #top .you {
     top: 5%;
     left: 6.3%
 }
-
-#top .icon2  {
+#top .iconWrap {
+    margin: 20px auto 0;
+    width: 420px;
+}
+#top .icon2 {
     text-align: center;
     position: relative;
     padding-top: 50px;
+    float: right;
+}
+#top .icon2:first-child{
+    float: left;
 }
 #top .icon2 p {
     box-sizing: padding-box;
@@ -413,6 +416,30 @@ footer {
     min-height: 800px;
     position: relative;
 }
+#torii .wrapper .kokoroeWrap {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#torii .wrapper .kokoroe {
+    display: block;
+    width: 1080px;
+    height: 536px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10000;
+}
+#torii .wrapper .kokoroe .modal_close {
+    bottom: -28px;
+}
 /*-----------------------
     slidemap
 -----------------------*/
@@ -452,7 +479,7 @@ footer {
     border: 4px solid #000000;
 }
 #saishi .js-slider{
-    width: 1050px;
+    width: 1350px;
 }
 .slide_bg {
     width: 151px;
@@ -471,10 +498,10 @@ footer {
     width: 141px;
 }
 #saishi .slide_bg.left {
-    width: 451px;
+    width: 601px;
 }
 #saishi .slide_bg.right {
-    width: 441px;
+    width: 591px;
 }
 .js-modalContent__tit {
     display: none;

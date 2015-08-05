@@ -56,12 +56,14 @@ $(window).load(function(){
 	overlay.on('click', function(){
 		overlay.hide();
 		overlay.removeClass('is-active');
+        $(".modal_movie_top").find("iframe").attr('src','');
 	});
     $(".modal_close").on('click', function(){
         overlay.hide();
 		overlay.removeClass('is-active');
+        $(".modal_movie_top").find("iframe").attr('src','');
     });
-    $(".modalContent").hover(
+    $("#saishi, #torii").find(".modalContent").hover(
         function(){
             modalTit = $(this).find('img').attr('title');
             sethover = setTimeout(function(){
@@ -89,3 +91,4 @@ $(window).load(function(){
 		}
 	}
 });
+

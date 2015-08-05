@@ -6,9 +6,9 @@ $(function(){
         controls: true,
         pager: false,
         minSlides: 3,
-        maxSlides: 7,
+        maxSlides: 9,
         moveSlides:1,
-        slideWidth:1050,
+        slideWidth:1400,
         autoHover:true
     });
 });
@@ -24,7 +24,7 @@ $(window).load(function(){
     t.find('a').on('click', function(e){
 		e.preventDefault();
 		contentIndex = $(this).parent().index('.modalContent2');
-        contentIndex = contentIndex % 7;
+        contentIndex = contentIndex % 9;
 		showSlide(contentIndex);
         /*-----------------
             高さを取得
@@ -54,10 +54,12 @@ $(window).load(function(){
 	overlay.on('click', function(){
 		overlay.hide();
 		overlay.removeClass('is-active');
+        $(".modal_movie_top").find("iframe").attr('src','');
 	});
     $(".modal_close").on('click', function(){
         overlay.hide();
 		overlay.removeClass('is-active');
+        $(".modal_movie_top").find("iframe").attr('src','');
     });
 	function showSlide(i) {
 		var href = t.eq(i).find('a').attr('href');
