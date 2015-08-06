@@ -122,12 +122,12 @@ $(window).load(function(){
     overlay.on('click', function(){
         overlay.hide();
         overlay.removeClass('is-active');
-        $(".modal_movie_top").find("iframe").attr('src','');
+        $(".modal_movie_top").find("iframe").attr('src','');//for sound stop
     });
     $(".modal_close").on('click', function(){
         overlay.hide();
         overlay.removeClass('is-active');
-        $(".modal_movie_top").find("iframe").attr('src','');
+        $(".modal_movie_top").find("iframe").attr('src','');//for sound stop
     });
     function showSlide(i) {
         var href = t.eq(i).find('a').attr('href');

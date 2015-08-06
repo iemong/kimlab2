@@ -21,6 +21,7 @@ $(window).load(function(){
 			modalWrap = $('.modal_wrap1'),
 			prevBtn = $('.modal_btn-prev1'),
 			nextBtn = $('.modal_btn-next1'),
+            sethover = 0,
 			contentIndex = 0;
     overlay.hide();
     t.find('a').on('click', function(e){
@@ -56,12 +57,12 @@ $(window).load(function(){
 	overlay.on('click', function(){
 		overlay.hide();
 		overlay.removeClass('is-active');
-        $(".modal_movie_top").find("iframe").attr('src','');
+        $(".modal_movie1").find("iframe").attr('src','');
 	});
     $(".modal_close").on('click', function(){
         overlay.hide();
 		overlay.removeClass('is-active');
-        $(".modal_movie_top").find("iframe").attr('src','');
+        $(".modal_movie1").find("iframe").attr('src','');
     });
     $("#saishi, #torii").find(".modalContent").hover(
         function(){
